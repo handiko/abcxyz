@@ -1587,6 +1587,8 @@ design rules under a new name.</description>
 <element name="C4" library="rcl" package="C1206" value="" x="18.415" y="29.845" rot="MR90"/>
 <element name="C5" library="rcl" package="C1206" value="" x="27.305" y="5.715" rot="MR90"/>
 <element name="C6" library="rcl" package="C1206" value="" x="24.765" y="5.715" rot="MR90"/>
+<element name="R6" library="rcl" package="M1206" value="" x="-18.415" y="-24.765"/>
+<element name="R7" library="rcl" package="M1206" value="" x="-18.415" y="-31.75"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1611,19 +1613,16 @@ design rules under a new name.</description>
 <vertex x="59.055" y="1.27"/>
 <vertex x="1.27" y="1.27"/>
 </polygon>
-</signal>
-<signal name="N$1">
-<contactref element="R4" pad="2"/>
-<contactref element="R5" pad="1"/>
-<contactref element="C4" pad="1"/>
-<wire x1="15.24" y1="26.165" x2="15.24" y2="28.445" width="1.016" layer="16"/>
-<wire x1="15.24" y1="28.445" x2="18.415" y2="28.445" width="1.016" layer="16"/>
+<contactref element="R7" pad="2"/>
+<wire x1="5.715" y1="5.715" x2="-17.015" y2="-31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="Q1" pad="1"/>
 <contactref element="R4" pad="1"/>
 <wire x1="15.24" y1="23.365" x2="17.867896875" y2="23.365" width="1.016" layer="16"/>
 <wire x1="17.867896875" y1="23.365" x2="17.888946875" y2="23.38605" width="1.016" layer="16"/>
+<contactref element="R6" pad="1"/>
+<wire x1="15.24" y1="23.365" x2="-19.815" y2="-24.765" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="Q1" pad="2"/>
@@ -1721,6 +1720,17 @@ design rules under a new name.</description>
 <contactref element="D2" pad="A"/>
 <contactref element="LSP3" pad="MP"/>
 <wire x1="54.61" y1="12.065" x2="49.53" y2="12.065" width="1.016" layer="16"/>
+</signal>
+<signal name="N$1">
+<contactref element="R6" pad="2"/>
+<contactref element="R7" pad="1"/>
+<contactref element="R4" pad="2"/>
+<contactref element="R5" pad="1"/>
+<contactref element="C4" pad="1"/>
+<wire x1="15.24" y1="26.165" x2="15.24" y2="28.445" width="1.016" layer="16"/>
+<wire x1="15.24" y1="28.445" x2="18.415" y2="28.445" width="1.016" layer="16"/>
+<wire x1="-17.015" y1="-24.765" x2="-19.815" y2="-31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="26.165" x2="-17.015" y2="-24.765" width="0" layer="19" extent="1-16"/>
 </signal>
 </signals>
 </board>

@@ -78,6 +78,7 @@
 <wire x1="0" y1="36.5" x2="0" y2="0" width="0" layer="20"/>
 <dimension x1="1.27" y1="-6.35" x2="59.055" y2="-6.35" x3="30.1625" y3="-3.810003125" textsize="1.778" textratio="12" layer="1"/>
 <dimension x1="66.675" y1="1.27" x2="66.675" y2="34.925" x3="64.13499375" y3="18.0975" textsize="1.778" textratio="12" layer="1"/>
+<text x="47.625" y="31.75" size="1.6764" layer="16" font="vector" ratio="12" rot="MR0">W7IUV PREAMP</text>
 </plain>
 <libraries>
 <library name="rcl">

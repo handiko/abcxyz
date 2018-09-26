@@ -14670,9 +14670,9 @@ high speed (Philips)</description>
 <net name="N$8" class="0">
 <segment>
 <pinref part="K1" gate="2" pin="O"/>
-<wire x1="104.14" y1="71.12" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="30.48" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="71.12" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="33.02" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="LSP1" gate="G$1" pin="MP"/>
 <wire x1="20.32" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
