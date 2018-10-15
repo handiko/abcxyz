@@ -75,11 +75,11 @@
 <rectangle x1="18.415" y1="29.21" x2="24.765" y2="34.29" layer="29"/>
 <dimension x1="71.12" y1="43.18" x2="71.12" y2="0" x3="73.025" y3="21.59" textsize="1.778" layer="20"/>
 <dimension x1="0" y1="-5.3975" x2="64.77" y2="-5.3975" x3="32.385" y3="-7.3025" textsize="1.778" layer="20"/>
-<wire x1="0" y1="0" x2="64.77" y2="0" width="0" layer="20"/>
-<wire x1="64.77" y1="43.18" x2="0" y2="43.18" width="0" layer="20"/>
-<rectangle x1="32.385" y1="17.78" x2="38.1" y2="24.13" layer="1"/>
-<wire x1="64.77" y1="43.18" x2="64.77" y2="0" width="0" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="43.18" width="0" layer="20"/>
+<wire x1="0" y1="0.9525" x2="64.77" y2="0.9525" width="0" layer="20"/>
+<wire x1="64.77" y1="41.5925" x2="0" y2="41.5925" width="0" layer="20"/>
+<wire x1="64.77" y1="41.5925" x2="64.77" y2="0.9525" width="0" layer="20"/>
+<wire x1="0" y1="0.9525" x2="0" y2="41.5925" width="0" layer="20"/>
+<rectangle x1="29.845" y1="17.78" x2="39.0525" y2="24.4475" layer="1"/>
 </plain>
 <libraries>
 <library name="rcl">
@@ -1575,7 +1575,6 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="rcl" package="CT6032" value="10u" x="43.4975" y="7.9375" rot="R270"/>
 <element name="C10" library="rcl" package="C1206" value="1n" x="46.99" y="15.875"/>
 <element name="C2" library="rcl" package="C1206" value="10n" x="10.795" y="26.67" smashed="yes">
 <attribute name="NAME" x="9.525" y="29.845" size="1.27" layer="25"/>
@@ -1607,7 +1606,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="35.2425" y="17.145" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1097566" x="35.2425" y="17.145" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J1" library="con-amp" package="1X2MTA" value="" x="59.055" y="14.605" rot="R90"/>
+<element name="J1" library="con-amp" package="1X2MTA" value="" x="59.3725" y="15.875" rot="R90"/>
 <element name="R1" library="rcl" package="M1206" value="" x="33.9725" y="11.1125"/>
 <element name="R2" library="rcl" package="M1206" value="" x="33.9725" y="7.9375" smashed="yes" rot="R180">
 <attribute name="NAME" x="35.2425" y="6.6675" size="1.27" layer="25" rot="R180"/>
@@ -1634,10 +1633,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="19.05" y="31.75" size="1.27" layer="25"/>
 <attribute name="VALUE" x="19.1849" y="24.2301" size="1.27" layer="27"/>
 </element>
-<element name="H7" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="59.69" y="5.08" rot="R180"/>
-<element name="H8" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="5.08" y="38.1" rot="R90"/>
-<element name="H3" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="5.08" y="5.08" rot="R90"/>
-<element name="H4" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="59.69" y="38.1" rot="R90"/>
+<element name="H7" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="59.69" y="6.0325" rot="R180"/>
+<element name="H8" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="5.08" y="36.5125" rot="R90"/>
+<element name="H3" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="5.08" y="6.0325" rot="R90"/>
+<element name="H4" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="59.69" y="36.5125" rot="R90"/>
 <element name="X3" library="con-coax" package="J502-ND-142-0701-851/861" value="SMA-142-0701-851/861" x="0" y="26.67">
 <attribute name="OC_NEWARK" value="99F6798" x="0" y="26.67" size="1.6764" layer="27" ratio="13" display="off"/>
 <attribute name="MPN" value="142-0701-851" x="0" y="26.67" size="1.6764" layer="27" ratio="13" display="off"/>
@@ -1650,6 +1649,8 @@ design rules under a new name.</description>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="64.77" y="26.67" size="1.6764" layer="27" ratio="13" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1019325" x="64.77" y="26.67" size="1.6764" layer="27" ratio="13" rot="R180" display="off"/>
 </element>
+<element name="C1" library="rcl" package="C1206" value="1n" x="39.37" y="9.525" rot="R270"/>
+<element name="C11" library="rcl" package="C1206" value="1n" x="48.26" y="9.525" rot="R270"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1688,7 +1689,6 @@ design rules under a new name.</description>
 <signal name="GND">
 <contactref element="R2" pad="1"/>
 <contactref element="C3" pad="-"/>
-<contactref element="C1" pad="-"/>
 <contactref element="C5" pad="-"/>
 <contactref element="C6" pad="2"/>
 <contactref element="C8" pad="1"/>
@@ -1703,10 +1703,10 @@ design rules under a new name.</description>
 <via x="20.32" y="22.86" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="20.32" y="20.32" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="17.78" y="10.795" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="13.0175" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="20.32" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="40.64" y="3.81" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="46.355" y="3.81" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="13.0175" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="20.32" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="43.4975" y="5.715" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="48.26" y="5.715" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="20.32" y="12.3825" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="22.86" y="17.78" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="20.32" y="10.795" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
@@ -1721,33 +1721,32 @@ design rules under a new name.</description>
 <vertex x="40.005" y="12.7"/>
 </polygon>
 <via x="7.62" y="22.86" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="7.62" y="20.32" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="7.62" y="21.2725" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="7.62" y="15.875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="7.62" y="12.7" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="7.62" y="8.89" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="8.255" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="7.62" y="9.525" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="8.255" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="9.2075" y="6.985" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="13.0175" y="6.985" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="56.8325" y="22.86" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="56.8325" y="20.0025" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="56.8325" y="8.5725" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="57.15" y="5.08" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="56.515" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="46.355" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="43.4975" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="40.64" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="37.465" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="32.7025" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="28.2575" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="24.13" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="62.865" y="15.875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="56.8325" y="10.4775" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="55.245" y="5.715" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="56.515" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="46.355" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="43.4975" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="40.64" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="37.465" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="32.7025" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="28.2575" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="24.13" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="1.905" y="20.0025" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="4.7625" y="20.0025" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="60.0075" y="20.0025" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="6.0325" y="21.2725" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="62.865" y="20.0025" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="1.905" y="15.875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="1.905" y="12.7" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="1.905" y="8.89" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="1.905" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="1.905" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="11.1125" y="4.445" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="35.56" y="5.715" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="16.1925" y="6.985" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
@@ -1758,69 +1757,69 @@ design rules under a new name.</description>
 <via x="37.465" y="5.715" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="40.64" y="5.715" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="49.8475" y="5.715" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="49.8475" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="53.34" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="49.8475" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="53.34" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="53.34" y="5.715" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="62.865" y="8.5725" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="62.865" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="59.69" y="9.525" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="62.865" y="10.4775" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="62.865" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="59.69" y="10.4775" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <polygon width="0.4064" layer="1">
 <vertex x="8.255" y="29.845"/>
 <vertex x="1.27" y="29.845"/>
-<vertex x="1.27" y="41.91"/>
-<vertex x="63.5" y="41.91"/>
+<vertex x="1.27" y="40.3225"/>
+<vertex x="63.5" y="40.3225"/>
 <vertex x="63.5" y="29.845"/>
 <vertex x="56.515" y="29.845"/>
 <vertex x="56.515" y="34.29"/>
 <vertex x="8.255" y="34.29"/>
 </polygon>
-<via x="17.78" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="25.4" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="17.78" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="25.4" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="23.495" y="30.48" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="19.685" y="30.48" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="7.62" y="30.48" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="57.15" y="30.48" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="7.62" y="33.02" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="8.89" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="11.43" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="28.575" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="32.385" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="14.605" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="36.195" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="39.37" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="46.99" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="50.165" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="53.34" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="57.15" y="33.02" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="5.08" y="33.3375" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="60.0075" y="33.3375" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="7.62" y="32.0675" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="9.2075" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="11.43" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="28.575" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="32.385" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="14.605" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="36.195" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="39.37" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="46.99" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="50.165" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="53.34" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="57.15" y="32.0675" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="6.0325" y="32.0675" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="58.7375" y="32.0675" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="1.905" y="33.3375" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="1.905" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="8.89" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="62.865" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="55.88" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="55.88" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="1.905" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="9.2075" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="62.865" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="55.5625" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="55.5625" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="62.865" y="33.3375" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="11.43" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="14.605" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="28.575" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="32.385" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="36.195" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="39.37" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="46.99" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="50.165" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="53.34" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="17.78" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="25.4" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="11.43" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="14.605" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="28.575" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="32.385" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="36.195" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="39.37" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="46.99" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="50.165" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="53.34" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="17.78" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="25.4" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="19.685" y="33.02" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="23.495" y="33.02" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="22.86" y="22.86" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="20.32" y="17.78" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <polygon width="0.4064" layer="16" isolate="0.6096">
-<vertex x="1.27" y="41.91"/>
-<vertex x="63.5" y="41.91"/>
-<vertex x="63.5" y="1.27"/>
-<vertex x="1.27" y="1.27"/>
+<vertex x="1.27" y="40.3225"/>
+<vertex x="63.5" y="40.3225"/>
+<vertex x="63.5" y="2.2225"/>
+<vertex x="1.27" y="2.2225"/>
 </polygon>
 <contactref element="H8" pad="B2,8"/>
 <contactref element="H7" pad="B2,8"/>
@@ -1838,7 +1837,7 @@ design rules under a new name.</description>
 <via x="46.355" y="5.715" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="37.465" y="7.9375" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="17.78" y="8.89" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="17.145" y="1.905" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="17.145" y="2.8575" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <polygon width="0.4064" layer="1" thermals="no">
 <vertex x="18.415" y="34.29"/>
 <vertex x="24.765" y="34.29"/>
@@ -1859,17 +1858,21 @@ design rules under a new name.</description>
 <vertex x="23.495" y="5.715"/>
 <vertex x="34.6075" y="5.715"/>
 <vertex x="34.6075" y="8.89"/>
-<vertex x="40.005" y="8.89"/>
-<vertex x="40.005" y="6.6675"/>
+<vertex x="40.9575" y="8.89"/>
+<vertex x="40.9575" y="6.6675"/>
+<vertex x="46.6725" y="6.6675"/>
+<vertex x="46.6725" y="8.89"/>
+<vertex x="49.8475" y="8.89"/>
+<vertex x="49.8475" y="6.6675"/>
 <vertex x="56.1975" y="6.6675"/>
 <vertex x="56.1975" y="23.495"/>
 <vertex x="63.5" y="23.495"/>
-<vertex x="63.5" y="1.27"/>
-<vertex x="1.27" y="1.27"/>
+<vertex x="63.5" y="2.2225"/>
+<vertex x="1.27" y="2.2225"/>
 </polygon>
-<via x="43.18" y="35.56" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="43.18" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
-<via x="21.59" y="41.275" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="43.18" y="34.925" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="43.18" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="21.59" y="39.6875" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <contactref element="X3" pad="G@2"/>
 <contactref element="X3" pad="G@4"/>
 <contactref element="X3" pad="G@1"/>
@@ -1882,6 +1885,12 @@ design rules under a new name.</description>
 <via x="6.0325" y="22.86" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="58.7375" y="30.48" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 <via x="58.7375" y="22.86" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C11" pad="2"/>
+<via x="58.7375" y="21.2725" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="56.8325" y="21.2725" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="7.62" y="18.7325" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
+<via x="4.445" y="20.0025" extent="1-16" drill="0.6" diameter="1.27" shape="octagon"/>
 </signal>
 <signal name="N$5">
 <contactref element="IC1" pad="2"/>
@@ -1936,13 +1945,14 @@ design rules under a new name.</description>
 <signal name="N$7">
 <contactref element="J1" pad="1"/>
 <contactref element="D1" pad="A"/>
-<wire x1="59.055" y1="16.5862" x2="55.6387" y2="16.5862" width="1.016" layer="1"/>
-<wire x1="55.6387" y1="16.5862" x2="52.3875" y2="13.335" width="1.016" layer="1"/>
-<wire x1="52.3875" y1="13.335" x2="50.8" y2="13.335" width="1.016" layer="1"/>
+<wire x1="59.3725" y1="17.8562" x2="54.6862" y2="17.8562" width="0.8128" layer="1"/>
+<wire x1="54.6862" y1="17.8562" x2="53.975" y2="17.145" width="0.8128" layer="1"/>
+<wire x1="53.975" y1="17.145" x2="53.975" y2="14.2875" width="0.8128" layer="1"/>
+<wire x1="53.975" y1="14.2875" x2="53.0225" y2="13.335" width="0.8128" layer="1"/>
+<wire x1="53.0225" y1="13.335" x2="50.8" y2="13.335" width="0.8128" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="3"/>
-<contactref element="C1" pad="+"/>
 <contactref element="D1" pad="C"/>
 <contactref element="R7" pad="2"/>
 <contactref element="C10" pad="2"/>
@@ -1952,14 +1962,15 @@ design rules under a new name.</description>
 <wire x1="48.39" y1="15.875" x2="48.39" y2="18.415" width="1.016" layer="1"/>
 <wire x1="48.26" y1="20.825" x2="50.67" y2="20.825" width="1.016" layer="1"/>
 <wire x1="50.67" y1="20.825" x2="50.8" y2="20.955" width="1.016" layer="1"/>
-<wire x1="48.39" y1="15.875" x2="48.39" y2="12.195" width="1.016" layer="1"/>
-<wire x1="48.39" y1="12.195" x2="46.6725" y2="10.4775" width="1.016" layer="1"/>
-<wire x1="46.6725" y1="10.4775" x2="43.5375" y2="10.4775" width="1.016" layer="1"/>
-<wire x1="43.5375" y1="10.4775" x2="43.4975" y2="10.4375" width="1.016" layer="1"/>
-<wire x1="43.4975" y1="10.4375" x2="40.045" y2="10.4375" width="1.016" layer="1"/>
-<wire x1="40.045" y1="10.4375" x2="37.7825" y2="12.7" width="1.016" layer="1"/>
-<wire x1="37.7825" y1="12.7" x2="37.7825" y2="13.7668" width="1.016" layer="1"/>
-<wire x1="37.7825" y1="13.7668" x2="37.5539" y2="13.9954" width="1.016" layer="1"/>
+<contactref element="C1" pad="1"/>
+<contactref element="C11" pad="1"/>
+<wire x1="48.39" y1="15.875" x2="48.39" y2="11.055" width="0.8128" layer="1"/>
+<wire x1="48.39" y1="11.055" x2="48.26" y2="10.925" width="0.8128" layer="1"/>
+<wire x1="37.5539" y1="13.9954" x2="37.5539" y2="11.6586" width="0.8128" layer="1"/>
+<wire x1="37.5539" y1="11.6586" x2="38.4175" y2="10.795" width="0.8128" layer="1"/>
+<wire x1="38.4175" y1="10.795" x2="39.24" y2="10.795" width="0.8128" layer="1"/>
+<wire x1="39.24" y1="10.795" x2="39.37" y2="10.925" width="0.8128" layer="1"/>
+<wire x1="39.37" y1="10.925" x2="48.26" y2="10.925" width="0.8128" layer="1"/>
 </signal>
 </signals>
 <errors>

@@ -353,14 +353,8 @@ UsedLibrary="C:/EAGLE-7.7.0/lbr/zetex.lbr"
 UsedLibrary="C:/EAGLE-7.7.0/lbr/zilog.lbr"
 
 [Win_1]
-Type="Control Panel"
-Loc="1358 -326 3277 692"
-State=1
-Number=0
-
-[Win_2]
 Type="Schematic Editor"
-Loc="1358 -326 3277 692"
+Loc="1366 -318 3285 700"
 State=1
 Number=1
 File="PGA-103+ VHF UHF.sch"
@@ -406,9 +400,9 @@ Layer=91
 Views=" 1: -4.20716 -3.19116 188.149 136.333"
 Sheet="1"
 
-[Win_3]
+[Win_2]
 Type="Board Editor"
-Loc="-8 -8 1357 706"
+Loc="0 0 1365 714"
 State=1
 Number=2
 File="PGA-103+ VHF UHF.brd"
@@ -451,6 +445,12 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=1
+
+[Win_3]
+Type="Control Panel"
+Loc="1366 -318 3285 700"
+State=1
+Number=0
 
 [Desktop]
 Screen="3286 1086"
