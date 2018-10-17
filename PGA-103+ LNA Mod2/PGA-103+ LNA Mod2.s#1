@@ -14821,8 +14821,13 @@ www.minicircuits.com&lt;br&gt;
 <net name="LNA_IN" class="0">
 <segment>
 <label x="25.4" y="26.67" size="1.778" layer="95"/>
-<wire x1="25.4" y1="25.4" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="25.4" x2="26.67" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="K3" gate="2" pin="P"/>
+<pinref part="K3" gate="2" pin="P@1"/>
+<wire x1="26.67" y1="25.4" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="22.86" x2="26.67" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="22.86" x2="26.67" y2="25.4" width="0.1524" layer="91"/>
+<junction x="26.67" y="25.4"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>

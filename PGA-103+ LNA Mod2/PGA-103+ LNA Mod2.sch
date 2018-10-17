@@ -13786,8 +13786,8 @@ type Z, winding clockwise</description>
 <wire x1="-3.15" y1="-1.65" x2="-3.45" y2="1.65" width="0.254" layer="51"/>
 <wire x1="-3.45" y1="-1.65" x2="-3.75" y2="1.65" width="0.254" layer="51"/>
 <wire x1="-3.75" y1="-1.65" x2="-4.05" y2="1.95" width="0.254" layer="51"/>
-<pad name="1" x="4" y="-1.85" drill="0.6" shape="octagon"/>
-<pad name="2" x="-4" y="1.85" drill="0.6" shape="octagon"/>
+<pad name="1" x="4" y="-1.85" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="2" x="-4" y="1.85" drill="1" diameter="1.778" shape="octagon"/>
 <text x="-2.6" y="2.0249" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.8" y="-3.2751" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -14311,6 +14311,10 @@ www.minicircuits.com&lt;br&gt;
 <part name="L3" library="inductor-neosid" deviceset="Z?CW" device="28/70"/>
 <part name="C8" library="rcl" deviceset="CPOL-EU" device="B/3528-21R" value="10u"/>
 <part name="U$1" library="minicircuits" deviceset="PGA-103" device=""/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="C15" library="rcl" deviceset="C-EU" device="C1206" value="1n"/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C1206" value="1n"/>
 </parts>
 <sheets>
 <sheet>
@@ -14337,19 +14341,19 @@ www.minicircuits.com&lt;br&gt;
 <attribute name="NAME" x="76.454" y="39.751" size="1.778" layer="95"/>
 <attribute name="VALUE" x="82.804" y="37.211" size="1.778" layer="96"/>
 </instance>
-<instance part="C11" gate="G$1" x="80.01" y="96.52" smashed="yes">
-<attribute name="NAME" x="82.804" y="96.901" size="1.778" layer="95"/>
-<attribute name="VALUE" x="82.804" y="94.361" size="1.778" layer="96"/>
+<instance part="C11" gate="G$1" x="95.25" y="96.52" smashed="yes">
+<attribute name="NAME" x="98.044" y="96.901" size="1.778" layer="95"/>
+<attribute name="VALUE" x="98.044" y="94.361" size="1.778" layer="96"/>
 </instance>
 <instance part="C14" gate="G$1" x="118.11" y="80.01" smashed="yes" rot="R180">
 <attribute name="NAME" x="120.904" y="82.931" size="1.778" layer="95"/>
 <attribute name="VALUE" x="120.904" y="80.391" size="1.778" layer="96"/>
 </instance>
 <instance part="GND17" gate="1" x="92.71" y="52.07"/>
-<instance part="GND9" gate="1" x="46.99" y="87.63"/>
-<instance part="GND6" gate="1" x="31.75" y="87.63"/>
-<instance part="GND12" gate="1" x="64.77" y="87.63"/>
-<instance part="GND14" gate="1" x="80.01" y="87.63"/>
+<instance part="GND9" gate="1" x="64.77" y="87.63"/>
+<instance part="GND6" gate="1" x="46.99" y="87.63"/>
+<instance part="GND12" gate="1" x="80.01" y="87.63"/>
+<instance part="GND14" gate="1" x="95.25" y="87.63"/>
 <instance part="R6" gate="G$1" x="105.41" y="80.01" smashed="yes" rot="R90">
 <attribute name="NAME" x="107.95" y="81.5086" size="1.778" layer="95"/>
 <attribute name="VALUE" x="107.95" y="79.248" size="1.778" layer="96"/>
@@ -14371,16 +14375,16 @@ www.minicircuits.com&lt;br&gt;
 </instance>
 <instance part="GND2" gate="1" x="-6.35" y="5.08"/>
 <instance part="X1" gate="G1" x="-8.89" y="12.7"/>
-<instance part="C4" gate="G$1" x="31.75" y="97.79" smashed="yes">
-<attribute name="NAME" x="34.544" y="98.171" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.544" y="95.631" size="1.778" layer="96"/>
+<instance part="C4" gate="G$1" x="46.99" y="97.79" smashed="yes">
+<attribute name="NAME" x="49.784" y="98.171" size="1.778" layer="95"/>
+<attribute name="VALUE" x="49.784" y="95.631" size="1.778" layer="96"/>
 </instance>
 <instance part="C2" gate="G$1" x="13.97" y="97.79" smashed="yes">
 <attribute name="NAME" x="16.764" y="98.171" size="1.778" layer="95"/>
 <attribute name="VALUE" x="16.764" y="95.631" size="1.778" layer="96"/>
 </instance>
 <instance part="GND4" gate="1" x="13.97" y="87.63"/>
-<instance part="IC1" gate="A1" x="46.99" y="102.87"/>
+<instance part="IC1" gate="A1" x="64.77" y="102.87"/>
 <instance part="C1" gate="G$1" x="3.81" y="64.77" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.874" y="68.961" size="1.778" layer="95"/>
 <attribute name="VALUE" x="7.874" y="66.421" size="1.778" layer="96"/>
@@ -14473,8 +14477,18 @@ www.minicircuits.com&lt;br&gt;
 <instance part="L1" gate="G$1" x="11.43" y="24.13" rot="R90"/>
 <instance part="L4" gate="G$1" x="147.32" y="24.13" rot="R90"/>
 <instance part="L3" gate="G$1" x="143.51" y="11.43" rot="R90"/>
-<instance part="C8" gate="G$1" x="64.77" y="96.52"/>
+<instance part="C8" gate="G$1" x="80.01" y="96.52"/>
 <instance part="U$1" gate="G$1" x="91.44" y="64.77"/>
+<instance part="GND23" gate="1" x="25.4" y="87.63"/>
+<instance part="C15" gate="G$1" x="25.4" y="97.79" smashed="yes">
+<attribute name="NAME" x="28.194" y="98.171" size="1.778" layer="95"/>
+<attribute name="VALUE" x="28.194" y="95.631" size="1.778" layer="96"/>
+</instance>
+<instance part="GND24" gate="1" x="35.56" y="87.63"/>
+<instance part="C16" gate="G$1" x="35.56" y="97.79" smashed="yes">
+<attribute name="NAME" x="38.354" y="98.171" size="1.778" layer="95"/>
+<attribute name="VALUE" x="38.354" y="95.631" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14504,18 +14518,18 @@ www.minicircuits.com&lt;br&gt;
 <net name="GND" class="0">
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="31.75" y1="90.17" x2="31.75" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="90.17" x2="46.99" y2="92.71" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="64.77" y1="90.17" x2="64.77" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="90.17" x2="80.01" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="80.01" y1="90.17" x2="80.01" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="90.17" x2="95.25" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="1"/>
@@ -14619,7 +14633,7 @@ www.minicircuits.com&lt;br&gt;
 <segment>
 <pinref part="IC1" gate="A1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="46.99" y1="90.17" x2="46.99" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="90.17" x2="64.77" y2="95.25" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="H1" gate="G$1" pin="MOUNT"/>
@@ -14667,19 +14681,29 @@ www.minicircuits.com&lt;br&gt;
 <pinref part="L1" gate="G$1" pin="2"/>
 <junction x="11.43" y="31.75"/>
 </segment>
+<segment>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="25.4" y1="90.17" x2="25.4" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="35.56" y1="90.17" x2="35.56" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="57.15" y1="102.87" x2="64.77" y2="102.87" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="102.87" x2="64.77" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="102.87" x2="80.01" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="102.87" x2="80.01" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="64.77" y1="102.87" x2="80.01" y2="102.87" width="0.1524" layer="91"/>
-<wire x1="80.01" y1="102.87" x2="105.41" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="102.87" x2="95.25" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="102.87" x2="105.41" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="105.41" y1="102.87" x2="105.41" y2="100.33" width="0.1524" layer="91"/>
-<junction x="64.77" y="102.87"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="80.01" y1="99.06" x2="80.01" y2="102.87" width="0.1524" layer="91"/>
 <junction x="80.01" y="102.87"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="95.25" y1="99.06" x2="95.25" y2="102.87" width="0.1524" layer="91"/>
+<junction x="95.25" y="102.87"/>
 <pinref part="IC1" gate="A1" pin="VO"/>
 <pinref part="C8" gate="G$1" pin="+"/>
 </segment>
@@ -14885,19 +14909,27 @@ www.minicircuits.com&lt;br&gt;
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="36.83" y1="102.87" x2="31.75" y2="102.87" width="0.1524" layer="91"/>
-<wire x1="31.75" y1="102.87" x2="31.75" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="102.87" x2="46.99" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="102.87" x2="46.99" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="7.62" y1="102.87" x2="13.97" y2="102.87" width="0.1524" layer="91"/>
-<junction x="31.75" y="102.87"/>
+<junction x="46.99" y="102.87"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="A1" pin="VI"/>
-<wire x1="13.97" y1="102.87" x2="31.75" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="13.97" y1="102.87" x2="25.4" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="102.87" x2="35.56" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="102.87" x2="46.99" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="13.97" y1="100.33" x2="13.97" y2="102.87" width="0.1524" layer="91"/>
 <junction x="13.97" y="102.87"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="13.97" y1="102.87" x2="13.97" y2="107.95" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="100.33" x2="25.4" y2="102.87" width="0.1524" layer="91"/>
+<junction x="25.4" y="102.87"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="100.33" x2="35.56" y2="102.87" width="0.1524" layer="91"/>
+<junction x="35.56" y="102.87"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
