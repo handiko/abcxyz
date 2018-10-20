@@ -84,7 +84,7 @@
 <rectangle x1="86.36" y1="86.36" x2="93.98" y2="93.98" layer="42"/>
 <rectangle x1="13.0175" y1="26.3525" x2="24.13" y2="35.8775" layer="29"/>
 <rectangle x1="13.0175" y1="26.3525" x2="24.13" y2="35.8775" layer="30"/>
-<text x="41.275" y="15.24" size="1.4224" layer="1" font="vector" ratio="16">SDL RELAY SEQUENCER - v1</text>
+<text x="38.4175" y="15.24" size="1.4224" layer="1" font="vector" ratio="16">SDL EME RELAY SEQUENCER - v1</text>
 <text x="44.1325" y="90.805" size="1.4224" layer="1" font="vector" ratio="16">1</text>
 <text x="55.5625" y="90.805" size="1.4224" layer="1" font="vector" ratio="16">2</text>
 <text x="66.9925" y="90.805" size="1.4224" layer="1" font="vector" ratio="16">3</text>
